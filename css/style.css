@@ -325,7 +325,7 @@ navigation menu
     width: 100%;
     height: 100%;
     z-index: -1;
-    visibility: hidden;
+    visibility: visible;
     background-color: var(--bg-black-50);
 }
 .fade-out-effect.active{
@@ -943,6 +943,9 @@ portfolio popup
     flex: 0 0 35%;
     padding: 0 15px;
     max-width: 35%;
+}
+.portfolio-popup .info span a{
+    color: var(--skin-color);
 }
 .portfolio-popup .info ul li{
     display: block;
