@@ -1,0 +1,86 @@
+@media(max-width: 991px){
+    .portfolio-section .portfolio-item{
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+}
+@media(max-width: 767px){
+    .contact-section .w-50,
+    .contact-section .contact-item,
+    .portfolio-popup .description,
+    .portfolio-popup .info,
+    .portfolio-section .portfolio-item,
+    .about-section .skills .skill-item,
+    .about-section .about-info,
+    .about-section .about-img,
+    .home-section .home-img,
+    .home-section .home-text{
+        flex: 0 0 100%!important;
+        max-width: 100%!important;
+    }
+    .home-section .home-text{
+        order: 2;
+    }
+    .contact-section .submit-btn,
+    .home-section .home-text{
+        text-align: center !important;
+    }
+    .home-section .full-screen{
+        padding: 100px 0!important;
+    }
+    .home-section .home-img .img-box{
+        margin-bottom: 40px;
+        max-width: 350px;
+    }
+    .effect-3{
+        margin-left: -100px;
+    }
+    .effect-4{
+        margin-left: -20px;
+    }
+    .about-section .about-img{
+        padding-bottom: 30px !important;
+    }
+    .about-section .timeline .timeline-item:nth-child(odd) {
+        padding-right: 15px !important;
+        text-align: left !important;
+        padding-left: 75px !important;
+    }
+    .about-section .timeline .timeline-item:nth-child(even) {
+        padding-left: 75px !important;
+    }
+    .about-section .timeline:before{
+        left: 35px !important;
+    }
+    .about-section .timeline .timeline-item:nth-child(odd) .icon{
+        right: auto;
+        left: -60px;
+    }
+    .about-section .timeline .timeline-item:nth-child(even) .icon{
+        left: -60px !important;
+    }
+    .about-section .timeline .timeline-item{
+        margin-bottom: 40px;
+    }
+    .about-section .timeline .timeline-item:last-child{
+        margin-bottom: 0px !important;
+    }
+    .about-section .timeline .timeline-item:nth-child(odd) .timeline-item-inner:before{
+        left: -30px !important;
+        right: auto;
+    }
+}
+@media(max-width: 574px){
+    .home-section .home-img .img-box{
+        max-width: 260px!important;
+    }
+    .home-section .home-text h2{
+        font-size: 40px!important;
+    }
+    .effect-5{
+        margin-top: 120px !important;
+    }
+    .effect-4{
+        margin-left: -80px !important;
+    }
+}

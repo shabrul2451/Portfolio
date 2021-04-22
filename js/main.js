@@ -257,3 +257,40 @@ testimonial slider*/
     })
 
 })();
+
+
+window.addEventListener("load", () => {
+    document.querySelector(".preloader").classList.add("fade-out");
+    setTimeout(() => {
+        document.querySelector(".preloader").style.display="none";
+    },600)
+});
+
+
+//listen for submit
+document.querySelector('.contact-form1').addEventListener('submit', submitForm);
+
+function submitForm(e){
+    e.preventDefault();
+
+    let name = document.querySelector('.name').value;
+    let email = document.querySelector('.email').value;
+    let subject = document.querySelector('.subject').value;
+    let message = document.querySelector(".message").value;
+    console.log(name);
+    sendEmail(name, email, subject, message);
+}
+
+function sendEmail(name, email, subject, message){
+    Email.send({
+        Host: 'smtp.gmail.com',
+        Username: 'shabrul2451@gmail.com',
+        Password: 'bh0974316',
+        To: 'shabrul2451@gmail.com',
+        From: 'mislam163003@bscse.uiu.ac.bd',
+        Subject: 'kisuna',
+        Body : 'sssssssssssssssss'
+    }).then(
+        message => alert(message)
+    );
+}
